@@ -49,6 +49,15 @@ const initializeDetailButtonEvents = () => {
             theDialog.showModal()
         }
     )
+
+     // Show Dory's details when the button is clicked
+     document.querySelector("#button--dinner").addEventListener(
+        "click",
+        theClickEvent => {
+            const theDialog = document.querySelector("#details--dinner")
+            theDialog.showModal()
+        }
+    )
 }
 
 export default initializeDetailButtonEvents
