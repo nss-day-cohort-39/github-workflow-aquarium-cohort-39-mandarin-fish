@@ -51,4 +51,13 @@ const initializeDetailButtonEvents = () => {
     )
 }
 
+document.querySelector("#button--puffy").addEventListener(
+    "click",
+    theClickEvent => {
+        const theDialog = document.querySelector("#details--puffy")
+        theDialog.showModal()
+    }
+)
+
+
 export default initializeDetailButtonEvents
