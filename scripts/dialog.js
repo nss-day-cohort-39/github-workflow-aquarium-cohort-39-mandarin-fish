@@ -49,6 +49,15 @@ const initializeDetailButtonEvents = () => {
             theDialog.showModal()
         }
     )
+
+    // Show Bart's details when the button is clicked
+    document.querySelector("#button--finley").addEventListener(
+        "click",
+        theClickEvent => {
+            const theDialog = document.querySelector("#details--finley")
+            theDialog.showModal()
+        }
+    )
 }
 
 export default initializeDetailButtonEvents
