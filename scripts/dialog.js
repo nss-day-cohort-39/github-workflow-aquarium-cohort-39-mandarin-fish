@@ -49,6 +49,14 @@ const initializeDetailButtonEvents = () => {
             theDialog.showModal()
         }
     )
+    
+    document.querySelector("#button--mandy").addEventListener(
+        "click",
+        theClickEvent => {
+            const theDialog = document.querySelector("#details--mandy")
+            theDialog.showModal()
+        }
+    )
 }
 
 document.querySelector("#button--puffy").addEventListener(
