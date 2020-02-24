@@ -50,7 +50,7 @@ const initializeDetailButtonEvents = () => {
         }
     )
 
-    // Show Bart's details when the button is clicked
+    // Show Finley's details when the button is clicked
     document.querySelector("#button--finley").addEventListener(
         "click",
         theClickEvent => {
@@ -58,6 +58,23 @@ const initializeDetailButtonEvents = () => {
             theDialog.showModal()
         }
     )
-}
+
+
+document.querySelector("#button--puffy").addEventListener(
+    "click",
+    theClickEvent => {
+        const theDialog = document.querySelector("#details--puffy")
+        theDialog.showModal()
+    }
+)
+
+document.querySelector("#button--mandy").addEventListener(
+    "click",
+    theClickEvent => {
+        const theDialog = document.querySelector("#details--mandy")
+        theDialog.showModal()
+    }
+)
+        }
 
 export default initializeDetailButtonEvents
